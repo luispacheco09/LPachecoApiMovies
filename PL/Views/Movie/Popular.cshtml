@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Popular";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Movie/PopularStyle.css" rel="stylesheet" />
+
+<h2>Popular</h2>
+
+@foreach (ML.Movie movie in Model.Movies)
+{
+    <div class="movie_card" id="bright">
+        <div class="info_section">
+            <div class="movie_header">
+                <img class="locandina" src="https://image.tmdb.org/t/p/original/@movie.poster_path" />
+                <h1>@movie.original_title</h1>
+                <h4>@movie.release_date</h4>
+                @*<span class="minutes">117 min</span>*@
+                @*<p class="type">Action, Crime, Fantasy</p>*@
+            </div>
+            <div class="movie_desc">
+                <p class="text">
+                    @movie.overview
+                </p>
+            </div>
+            <div class="movie_social">
+                <ul>
+                    <li><i class="material-icons">share</i></li>
+                    <li><i class="material-icons"></i></li>
+                    <li><i class="material-icons">chat_bubble</i></li>
+                </ul>
+            </div>
+        </div>
+        <img class="blur_back " src="https://image.tmdb.org/t/p/original/@movie.backdrop_path">
+    </div>
+}
