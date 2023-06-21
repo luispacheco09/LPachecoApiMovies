@@ -83,7 +83,7 @@ form {
     z-index: 2;
 }
 
-    form input {
+    form inputNew {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -103,11 +103,11 @@ form {
         font-weight: 300;
     }
 
-        form input:hover {
+        form inputNew:hover {
             background-color: rgba(255, 255, 255, 0.4);
         }
 
-        form input:focus {
+        form inputNew:focus {
             background-color: white;
             width: 300px;
             color: #53e3a6;

@@ -15,12 +15,6 @@
                 <img class="locandina" src="https://image.tmdb.org/t/p/original/@movie.poster_path" />
                 <h1>@movie.original_title</h1>
                 <h4>@movie.release_date</h4>
-                <div>
-                    <input type="checkbox" id="heart"  onchange="AddFavorito(@movie.id, this);" />
-                    <label for="heart">
-                        Check me!
-                    </label>
-                </div>
                 @*<span class="minutes">117 min</span>*@
                 @*<p class="type">Action, Crime, Fantasy</p>*@
             </div>
@@ -40,5 +34,3 @@
         <img class="blur_back " src="https://image.tmdb.org/t/p/original/@movie.backdrop_path">
     </div>
 }
-
-<script src="~/Scripts/Movie/Favorito.js"></script>
